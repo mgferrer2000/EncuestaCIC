@@ -1,0 +1,27 @@
+tego que desarrollar una web que presente una encuesta de 6 preguntas que te voy a dar a continuacion.
+Las respuestas van de 1 a 5. si se puede acompañar de iconos de cara triste a cara sonriente y de roo a verde seria perfecto.
+DEbe de estar orientada a moviles. Las respuestas se almacenaran en un sheet de google en un google drive
+la configuracion de acceso a los documentos del drive debe hacerse leyendo un archivo de configuracion, para poder cambiar la cuenta facilmente.
+Las preguntas de la encuesta son :
+
+
+1- ¿En qué medida el centro de instrumentación científica cumple con los requisitos acordados para la prestación del servicio (alcance, plazos y condiciones)?
+1 No cumple 2 Cumple parcialmente 3 Cumple 4 Cumple en alto grado 5 Cumple totalmente
+
+2- ¿Cómo evalúa la competencia técnica del personal del centro para la operación de los equipos y la interpretación de resultados?
+1 Muy baja 2 Baja 3 Adecuada 4 Alta 5 Muy alta
+
+3- ¿El centro asegura la confiabilidad y trazabilidad de los resultados entregados, considerando la calibración y el mantenimiento de los equipos?
+1 Nunca 2 Rara vez 3 A veces 4 Casi siempre 5 Siempre
+
+4- ¿Qué tan eficaz considera la comunicación con el usuario antes, durante y después de la prestación del servicio?
+1 Muy ineficaz 2 Ineficaz 3 Aceptable 4 Eficaz 5 Muy eficaz
+
+5- En términos generales, ¿qué tan satisfecho/a está con la calidad del servicio brindado por el centro de instrumentación científica?
+1 Muy insatisfecho/a 2 Insatisfecho/a 3 Neutral 4 Satisfecho/a 5 Muy satisfecho/a
+
+6- Si lo desea puede comentar en el siguiente apartado cualquier consideracion que nos ayude a mejorar 
+
+
+
+Los usuarios va  aser principalmente gente joven. Hazla atractiva, rapida y bonita
