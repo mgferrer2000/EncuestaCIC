@@ -90,7 +90,19 @@ function App() {
         answers[6] || ''
       ];
 
-      await axios.post('/api/submit', { answers: row });
+      const apiBase = import.meta.env.VITE_API_URL || '';
+      let url = '';
+
+      if (apiBase.includes('script.google.com')) {
+        url = apiBase;
+        // GAS doesn't handle CORS preflight (OPTIONS). 'text/plain' avoids it.
+        await axios.post(url, JSON.stringify({ answers: row }), {
+          headers: { 'Content-Type': 'text/plain' }
+        });
+      } else {
+        url = apiBase.endsWith('/') ? `${apiBase}api/submit` : `${apiBase}/api/submit`;
+        await axios.post(url, { answers: row });
+      }
       setCurrentStep(questions.length + 1); // Thank you screen
     } catch (err) {
       console.error(err);
@@ -119,7 +131,7 @@ function App() {
         {currentStep === 0 && (
           <div className="welcome-screen" key="welcome">
             <div className="logo-container">
-              <img src="/logocic.png" alt="CIC Logo" className="logo" />
+              <img src="logocic.png" alt="CIC Logo" className="logo" />
             </div>
             <h1>Encuesta de Satisfacción</h1>
             <p>Son solo 6 preguntas breves para conocer tu opinión.</p>
