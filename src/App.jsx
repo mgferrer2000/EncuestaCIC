@@ -8,42 +8,42 @@ import { FaCheckCircle, FaClipboardList } from 'react-icons/fa';
 const questions = [
   {
     id: 1,
-    text: "¿En qué medida el centro de instrumentación científica cumple con los requisitos acordados para la prestación del servicio (alcance, plazos y condiciones)?",
+    text: "¿El servicio cumplió con lo acordado en tiempo y forma?",
     type: 'rating',
     minLabel: "No cumple",
     maxLabel: "Cumple totalmente"
   },
   {
     id: 2,
-    text: "¿Cómo evalúa la competencia técnica del personal del centro para la operación de los equipos y la interpretación de resultados?",
+    text: "¿Cómo valora la competencia técnica del personal?",
     type: 'rating',
     minLabel: "Muy baja",
     maxLabel: "Muy alta"
   },
   {
     id: 3,
-    text: "¿El centro asegura la confiabilidad y trazabilidad de los resultados entregados, considerando la calibración y el mantenimiento de los equipos?",
+    text: "¿Confía en la fiabilidad y calidad de los resultados?",
     type: 'rating',
-    minLabel: "Nunca",
-    maxLabel: "Siempre"
+    minLabel: "Nada",
+    maxLabel: "Totalmente"
   },
   {
     id: 4,
-    text: "¿Qué tan eficaz considera la comunicación con el usuario antes, durante y después de la prestación del servicio?",
+    text: "¿Cómo califica la comunicación con el técnico durante todo el proceso?",
     type: 'rating',
-    minLabel: "Muy ineficaz",
-    maxLabel: "Muy eficaz"
+    minLabel: "Muy mala ",
+    maxLabel: "Muy buena"
   },
   {
     id: 5,
-    text: "En términos generales, ¿qué tan satisfecho/a está con la calidad del servicio brindado por el centro de instrumentación científica?",
+    text: "¿Cuál es su grado de satisfacción general con el servicio?",
     type: 'rating',
     minLabel: "Muy insatisfecho/a",
     maxLabel: "Muy satisfecho/a"
   },
   {
     id: 6,
-    text: "Si lo desea puede comentar en el siguiente apartado cualquier consideración que nos ayude a mejorar",
+    text: "Comentarios / sugerencias / quejas (opcional)",
     type: 'text'
   }
 ];

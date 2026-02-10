@@ -18,6 +18,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /* Fallback */
+  min-height: 100dvh;
+  /* Mobile viewport fix */
 }
 
 #root {
@@ -116,8 +119,15 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   #root {
     padding: 10px;
+    width: 100%;
   }
 
   .question-card {
@@ -135,6 +145,7 @@ body {
 
   .question-text {
     font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
